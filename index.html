@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator - Razzak</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="inputBox">
+      <h2>Password Generator App</h2>
+      <span id="tooltip"></span>
+      <input
+        type="text"
+        placeholder="Create Password"
+        id="password"
+        onclick="copyPassword()"
+        onmouseout="clearTootip()"
+        readonly
+      />
+
+      <div id="btn" onclick="getPassword()">Generate Password</div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
